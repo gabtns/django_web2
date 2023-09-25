@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+{% extends 'core/base.html' %}{% load static %}{% block content %}
+
+<body>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <!--Contenido-->
+            <div class="contenido">
+
+
+                <section class="page-section cta">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-9 mx-auto">
+                                <div class="cta-inner text-center rounded">
+                                    <h2 class="section-heading mb-5">
+                                        <span class="section-heading-upper">Te esperamos</span>
+                                        <span class="section-heading-lower">Visítanos</span>
+                                    </h2>
+                                    <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+                                        <li class="list-unstyled-item list-hours-item d-flex">
+                                            Lunes a viernes
+                                            <span class="ml-auto">7:00 a 20:00</span>
+                                        </li>
+                                        <li class="list-unstyled-item list-hours-item d-flex">
+                                            Sábados
+                                            <span class="ml-auto">Cerrado</span>
+                                        </li>
+                                        <li class="list-unstyled-item list-hours-item d-flex">
+                                            Domingos
+                                            <span class="ml-auto">7:00 a 21:00</span>
+                                        </li>
+                                    </ul>
+                                    <p class="address mb-5">
+                                        <em>
+                                                        <strong>Avd. Arrieta 1943</strong>
+                                                        <br>
+                                                        Lugar
+                                                    </em>
+                                    </p>
+                                    <p class="mb-0">
+                                        <small>
+                                                        <em>Llámanos y pregunta</em>
+                                                    </small>
+                                        <br> (317) 585-8465
+                                    </p>
+                                </div>
+                                <br>
+                                <br>
+                                <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                                    <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+
+                                    <script>
+                                        (function() {
+                                            var setting = {
+                                                "query": "Arrieta 1943, Rosario, Santa Fe, Argentina",
+                                                "width": 800,
+                                                "height": 800,
+                                                "satellite": true,
+                                                "zoom": 12,
+                                                "placeId": "EjBBcnJpZXRhIDE5NDMsIFMyMDAwIFJvc2FyaW8sIFNhbnRhIEZlLCBBcmdlbnRpbmEiMRIvChQKEgnNbg2J4qu3lRGEILL9oTFqNxCXDyoUChIJ1ae4WF-pt5URpgzKndLGnaI",
+                                                "cid": "0xd3a335e91c7036c4",
+                                                "coords": [-33.0100054, -60.66093120000001],
+                                                "lang": "es",
+                                                "queryString": "Arrieta 1943, Rosario, Santa Fe, Argentina",
+                                                "centerCoord": [-33.0100054, -60.66093120000001],
+                                                "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+                                                "embed_id": "999968"
+                                            };
+                                            var d = document;
+                                            var s = d.createElement('script');
+                                            s.src = 'https://1map.com/js/script-for-user.js?embed_id=999968';
+                                            s.async = true;
+                                            s.onload = function(e) {
+                                                window.OneMap.initMap(setting)
+                                            };
+                                            var to = d.getElementsByTagName('script')[0];
+                                            to.parentNode.insertBefore(s, to);
+                                        })();
+                                    </script><a href="https://1map.com/es/map-embed">1 Map</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    </main>
+    </div>
+    </div>
+    {% endblock %}
+</body>
+
+</html>
